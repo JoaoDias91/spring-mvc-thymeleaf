@@ -15,11 +15,22 @@ public class Pedido {
     private String urlDaImagem;
     private String descricaco;
 
+    @ManyToOne(fetch = FetchType.LAZY )
+    private User user;
+
     @Enumerated(EnumType.STRING)
     private StatusPedido status;
 
     public void setStatus(StatusPedido status) {
         this.status = status;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public StatusPedido getStatus() {

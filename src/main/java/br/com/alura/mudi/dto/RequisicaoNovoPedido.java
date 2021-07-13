@@ -4,6 +4,7 @@ import br.com.alura.mudi.model.Pedido;
 import br.com.alura.mudi.model.StatusPedido;
 
 import javax.validation.constraints.NotBlank;
+import java.security.Principal;
 
 public class RequisicaoNovoPedido {
 
